@@ -1,1 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/roboto-mono');
+
 /* Add application styles & imports to this file! */
+
+/*font size for the header fontawesome icons */
+.fa-hx {
+  font-size: 1.5em;
+}
+
+.roboto-mono {
+  font-family: 'Roboto Mono', sans-serif !important;
+}
+
+.monospaced-font {
+  font-family: monospace, 'Courier New', Courier !important;
+}
