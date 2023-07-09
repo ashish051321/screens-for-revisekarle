@@ -16,7 +16,7 @@
   </ul>
 </nav> -->
 
-<div class="header">
+<div class="w-100 header d-flex justify-content-end">
   <div class="search-bar" [ngClass]="{ expanded: isSearchExpanded }">
     <input
       class="search-input"
@@ -35,8 +35,7 @@
     <button *ngIf="isSearchExpanded" class="close-icon" (click)="closeSearch()">
       &times;
     </button>
-  </div>
-  <div class="icons">
+
     <div class="icon">
       <i class="fa fa-user"></i>
     </div>
