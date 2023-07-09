@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
   <a class="navbar-brand monospaced-font" href="#">EverLearn</a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
@@ -14,4 +14,32 @@
       <i class="fa fa-ellipsis-v fa-hx text-white ml-3"></i>
     </li>
   </ul>
-</nav>
+</nav> -->
+
+<div class="header">
+  <div class="search-bar" [ngClass]="{ expanded: isSearchExpanded }">
+    <input
+      class="search-input"
+      *ngIf="isSearchExpanded"
+      type="text"
+      placeholder="Search..."
+      [(ngModel)]="searchText"
+    />
+    <button
+      class="search-icon"
+      (click)="expandSearch()"
+      *ngIf="!isSearchExpanded"
+    >
+      <i class="fa fa-search"></i>
+    </button>
+    <button *ngIf="isSearchExpanded" class="close-icon" (click)="closeSearch()">
+      &times;
+    </button>
+  </div>
+  <div class="icons">
+    <div class="icon">
+      <i class="fa fa-user"></i>
+    </div>
+    <!-- Add more icons here -->
+  </div>
+</div>
